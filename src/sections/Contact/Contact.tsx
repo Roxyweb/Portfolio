@@ -1,5 +1,5 @@
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
-const links = [{ name: 'Email', value: 'okiberoy@gmail.com]' }, { name: 'GitHub', value: 'https://github.com/Roxyweb' }, { name: 'LinkedIn', value: 'Add your profile URL' }, { name: 'WhatsApp', value: '+234 911 541 4860' }]
+const links = [{ name: 'Email', value: 'okiberoy@gmail.com' }, { name: 'GitHub', value: 'https://github.com/Roxyweb' }, { name: 'LinkedIn', value: 'Add your profile URL' }, { name: 'WhatsApp', value: '+234 911 541 4860' }]
 export default function Contact() {
   return <section className="section-wrap contact-section" id="contact"><div className="contact-panel"><div className="contact-glow" /><div className="contact-top"><SectionTitle eyebrow="HAVE AN IDEA?" title="Let’s build something interesting." text="Have a thought, a question or a small idea to explore? I’d like to hear about it." /><a className="contact-orbit" href="#home" aria-label="Back to top">↗</a></div><div className="contact-bottom"><span className="eyebrow"><i />FIND ME AROUND THE WEB</span><div className="contact-links">{links.map(link => <div className="contact-link" key={link.name}><span>{link.name}</span><span className="contact-placeholder">{link.value}</span></div>)}</div></div></div></section>
 }
