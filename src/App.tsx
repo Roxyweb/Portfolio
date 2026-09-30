@@ -22,6 +22,6 @@ export default function App() {
       <Journey />
       <Contact />
     </main>
-    <footer className="site-footer"><a className="wordmark" href="#home">ORS<span>.</span></a><span>Designed & built with curiosity.</span><a href="#home" aria-label="Back to top">Back to top ↑</a></footer>
+    <footer className="site-footer"><a className="wordmark" href="#home">ROY<span>.</span></a><span>Designed & built with curiosity.</span><a href="#home" aria-label="Back to top">Back to top ↑</a></footer>
   </>
 }

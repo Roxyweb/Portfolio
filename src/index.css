@@ -18,3 +18,12 @@
 
 .project-link{display:inline-flex;align-items:center;gap:8px;margin-top:15px;font-size:10px;font-weight:700;color:var(--accent)}.project-link span{font-size:14px;transition:transform .2s}.project-link:hover span{transform:translate(2px,-2px)}
 
+
+/* Gentle ambient motion and a section-aware background shift. */
+body{transition:background-color 1.1s cubic-bezier(.22,.61,.36,1)}
+html.skills-in-view body{background-color:#11140e}
+.visual-ring{animation:ring-breathe 12s ease-in-out infinite alternate}
+.ring-two{animation-delay:-4s}.ring-three{animation-delay:-8s}
+@keyframes ring-breathe{from{opacity:.65}to{opacity:1}}
+.skill-card,.project-card,.service-row,.button,.contact-orbit{transition-timing-function:cubic-bezier(.22,.61,.36,1)}
+@media(prefers-reduced-motion:reduce){.visual-ring{animation:none}body{transition:none}}
